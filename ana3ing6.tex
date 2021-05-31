@@ -112,14 +112,35 @@ Begründen Sie aber, warum Sie diese Identität benutzen. Der Rechenweg ist anso
 \end{itemize}
 
 
-      \begin{subsection}{Antwort}
+     \begin{subsection}{Antwort}
 \begin{itemize}
-\item[a)] Sollen wir das mit Polarkoordinaten lösen oder Kartesisch? Was ist meine Ansatzfunktion..?
-\item[b)] 
-\item[c)]  
+\item[a)]Unsere Ansatzfunktion lautet :\\
+\begin{align*}
+   u(x,y) &= A(x^{2}-y^{2})+B,( \textrm{A,B sind Konstante})\\
+    u(x,y) &= 4(x^{2}-2) , x^{2}+y^{2}=1\\
+    \Leftrightarrow A(x^{2}-y^{2})+B&=4(x^{2}-2)\\
+    \Leftrightarrow A(2x^{2}-(y^{2}+x^{2}))+B&=4(x^{2}-2)\\
+    \Leftrightarrow A(2x^{2}-1)+B&=4(x^{2}-2)\\
+    \Leftrightarrow A&=2\, \textrm{und}\, B=0.\\
+    \Leftrightarrow u(x,y)&=2(x^{2}-y^{2})
+\end{align*}
+\item[b)]
+\begin{align*}
+u((\frac{4}{5}),0)=2\left((\frac{4}{5})^{2}-0^{2})\right)=\frac{32}{25}
+\end{align*}
+\item[c)] 
+Poissonsche Integralformel:\\
+\begin{align*}
+       u(re^{i\theta})&=\frac{1}{2\pi} \int_{0}^{2\pi}u(Re^{i\phi})\frac{R^{2}-r^{2}}{R^{2}-2Rrcos(\theta-\phi)+r^{2}}\,d\phi \\
+    \Leftrightarrow u\left(\frac{4}{5},0\right)&=
+   \frac{1}{2\pi} \int_{0}^{2\pi}(4(cos\phi)^{2}-2))\frac{1-(\frac{4}{5})^{2}}{1-2.1.\frac{4}{5}cos(-\phi)+(\frac{4}{5})^{2}}\,d\phi \\
+    \Leftrightarrow  u\left(\frac{4}{5},0\right)&=\frac{1}{2\pi} \int_{0}^{2\pi}(4(cos\phi)^{2}-2))\frac{9}{41-40cos(\phi)}\,d\phi = \frac{32}{25}
+\end{align*}
 \item[d)] 
 \item[e)] 
 \end{itemize}
     \end{subsection}  
 \end{section}
 \end{document}
+
+
